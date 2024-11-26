@@ -13,7 +13,9 @@ export default function Header() {
         animate={{y:0, x:"-50%", opacity:1}}
         ></motion.div>
 
-        <nav className="fixed flex top-[0.2rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.5rem] sm:h-[initial] sm:py-0">
+        <motion.nav className="fixed flex top-[0.2rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.5rem] sm:h-[initial] sm:py-0"         
+        initial={{y:-100, x:"-50%", opacity:0}}
+        animate={{y:0, x:"-50%", opacity:1}}>
             <ul className="flex w-[20rem] flex-wrap items-center justify-center gap-y-1 text-[1rem] font-medium text-gray-600 sm:w-[initial] sm:flex-nowrap sm:gap-4">
                 {links.map((link) => (
                         <li className="h-3/4 flex items-center justify-center" key={link.hash} >
@@ -24,7 +26,7 @@ export default function Header() {
                     ))
                 }
             </ul>
-        </nav>
+        </motion.nav>
     </header>
     );
 }
