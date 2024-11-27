@@ -29,7 +29,7 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const experiences = [
   {
     title: "Graduated Bachelor i informasjonsteknologi",
     location: "Oslo",
@@ -56,31 +56,31 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projects = [
   {
     title: "Movie-Night-Site",
     description:
       "Project where me and my friends could have a watchlist and pick movies for movie nights.",
-    tags: ["Javascript", "Next.js", "MongoDB", "CSS", "Express"],
-    imageUrl: movieImg,
+    tech: ["Javascript", "Next.js", "MongoDB", "CSS", "Express"],
+    image: movieImg,
   },
   {
-    title: "test",
+    title: "test title",
     description:
       "Test vtestsetse jlskjklsjef.",
-    tags: ["React", "test", "test.js", "test", "test"],
-    imageUrl: portfolioImg,
+    tech: ["React", "test", "test.js", "test", "test"],
+    image: portfolioImg,
   },
   {
-    title: "Poogers",
+    title: "Poogers test title",
     description:
       "Poggers testing",
-    tags: ["test", "test.js", "test", "test", "test"],
-    imageUrl: testImg,
+    tech: ["test", "test.js", "test", "test", "test"],
+    image: testImg,
   },
 ] as const;
 
-export const skillsData = [
+export const skills = [
   "C#",
   "C",
   "Kotling",
