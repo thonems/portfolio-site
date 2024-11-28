@@ -5,9 +5,6 @@ import {sendEmail} from "@/components/email";
 
 export default function Contact(){
 
-
-
-
     return (
         <section id="contact" className='scroll-mt-32 mb-16 sm:mb-28 w-[min(100%,38rem) text-center]'>
             <h2 className='text-3xl font-bold mb-8'>Contact me</h2>
