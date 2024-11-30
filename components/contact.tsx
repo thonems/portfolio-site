@@ -2,10 +2,16 @@
 
 import React from 'react';
 import {sendEmail} from "@/components/email";
+import toast from "react-hot-toast";
 
 export default function Contact(){
 
-
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const formData = new FormData(e.currentTarget);
+    
+        const res = await sendEmail(formData);
+      };
 
 
     return (
@@ -14,8 +20,16 @@ export default function Contact(){
             <p className='text-2x1 font-medium text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque?</p>
 
             <form className='flex flex-col mt-9' action={async (formData) => {
-                await sendEmail(formData)
-            }} >
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Email sent successfully!");
+        }}
+      >
                     <input type="email" placeholder="Your email" required={true} maxLength={500} className=' px-3 h-12 rounded-md border border-black/20 p-3ppm' name='email'/>
 
                     <textarea className='h-48 my-4 border border-black/20 rounded-md px-3 p-3' name='message' required={true} maxLength={1000} placeholder="Message" />
