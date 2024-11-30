@@ -33,24 +33,21 @@ export const experiences = [
   {
     title: "Graduated Bachelor i informasjonsteknologi",
     location: "Oslo",
-    description:
-      "I graduated.",
+    description: "I graduated.",
     icon: React.createElement(LuGraduationCap),
     date: "2020-2023",
   },
   {
     title: "Graduated Bachelor i Tannpleie",
     location: "Elverum",
-    description:
-      "IGraduatetd 2020",
+    description: "IGraduatetd 2020",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2021",
   },
   {
     title: "NIF",
     location: "Oslo",
-    description:
-      "Worked at NIF",
+    description: "Worked at NIF",
     icon: React.createElement(FaReact),
     date: "2023",
   },
@@ -66,15 +63,13 @@ export const projects = [
   },
   {
     title: "test title",
-    description:
-      "Test vtestsetse jlskjklsjef.",
+    description: "Test vtestsetse jlskjklsjef.",
     tech: ["React", "test", "test.js", "test", "test"],
     image: portfolioImg,
   },
   {
     title: "Poogers test title",
-    description:
-      "Poggers testing",
+    description: "Poggers testing",
     tech: ["test", "test.js", "test", "test", "test"],
     image: testImg,
   },
