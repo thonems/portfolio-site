@@ -64,12 +64,13 @@ export const projects = [
   {
     title: "Portfolio-website",
     description: "React application for my portfolio",
-    tech: ["React", "Typescript", "Tailwind", "Vercel", "Next.js","Resend"],
+    tech: ["React", "Typescript", "Tailwind", "Vercel", "Next.js", "Resend"],
     image: portfolioImg,
   },
   {
     title: "Recipe Management",
-    description: "App for managing my recipes i often want to save from the web",
+    description:
+      "App for managing my recipes i often want to save from the web",
     tech: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Maven"],
     image: testImg,
   },

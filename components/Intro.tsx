@@ -26,10 +26,9 @@ export default function Intro() {
       </div>
 
       <p className="mb-10 mt-6 px-4 text-2x1 font-medium leading-[1.5] sm:text-4x1">
-        My name is <span className="font-bold">Thomas Nemeth</span>, and i am a backend developer. Tempora accusamus sapiente, perspiciatis
-        mollitia dicta explicabo distinctio qui a expedita eum officia saepe
-        voluptatibus esse sunt quo tenetur consequatur commodi veritatis,
-        corporis cumque ipsam? Rerum, eos. Officia pariatur corporis totam rem?
+        My name is <span className="font-bold">Thomas Nemeth</span>, and i am a
+        backend developer. I enjoy coding, movies and outings with friends.
+        Currently looking for a job!
       </p>
 
       <div className="flex sm:flex-row flex-col justify-center gap-2 px-4 text-base font-medium ">

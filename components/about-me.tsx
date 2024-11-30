@@ -7,16 +7,13 @@ export default function About() {
       id="about"
     >
       <h2 className="text-3xl font-bold mb-8">About me</h2>
-      <p className="mb-3">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, autem!
-        A, eos libero asperiores officia commodi non fuga nobis quasi nesciunt
-        earum labore doloremque rem consequuntur excepturi dolor consectetur
-        alias.
-      </p>
+      <p className="mb-3"></p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus
-        itaque dolor modi consectetur sint laudantium facilis! Hic, totam earum!
-        Itaque.
+        I hold a bachelor’s degree in Information Technology from Høyskolen
+        Kristiania, where I specialized in backend technologies such as .NET,
+        Java, C and SQL. In my free time, I enjoy playing games with friends,
+        watching movies, and playing with innovative technologies. Let’s create
+        something amazing together!
       </p>
     </section>
   );
