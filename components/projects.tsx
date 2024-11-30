@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Projects(){
     return (
         <section className='scroll-mt-32 mb-24' id='projects'>
-            <h2 className='text-3xl font-bold mb-8'>Projects</h2>
+            <h2 className='text-center text-3xl font-bold mb-8'>Projects</h2>
             <div>
                 {
                     projects.map((project, i) => (

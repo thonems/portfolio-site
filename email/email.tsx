@@ -12,11 +12,11 @@ export const sendEmail = async (formData: FormData) => {
     const message = formData.get("message");
     
     if(!email || typeof email !== "string") {
-        return;
+        return {error: "invalid email or missing. "};
     };
 
     if(!message || typeof message !== "string") {
-        return;
+        return{error: "invalid message or missing. "};
     };
     let data;
     try {
@@ -27,15 +27,22 @@ export const sendEmail = async (formData: FormData) => {
             replyTo: email as string,
             text: message as string,
         });
+
+        if(data.error) {
+            console.error("errordataerror.  ",data.error);
+            return { error:data.error.message};
+        }
     } catch (error){ 
-      if(error instanceof Error){
-        return (error.message);
-      }
-      else if(error && typeof error === "object" && "message" in error){
-        return error.message
-      } else {
-        return "something went wrong";
-      }
+      if (error instanceof Error) {
+        console.log("error 1 ");
+        return { error: error.message };
+    } else if (typeof error === "object" && error && "message" in error) {
+      console.log("error 2 ");
+        return { error: (error as any).message };
+    } else {
+      console.log("error 3");
+        return { error: "Something went wrong." };
+    }
     }
     return {
       data,

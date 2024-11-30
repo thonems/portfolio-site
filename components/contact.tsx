@@ -15,9 +15,10 @@ export default function Contact(){
             <p className='text-2x1 font-medium text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque?</p>
 
             <form className='flex flex-col mt-9' action={async (formData) => {
-           const { error } = await sendEmail(formData);
+           const { data, error } = await sendEmail(formData);
+
            if(error) {
-            toast.error(error.message);
+            toast.error(error);
             return;
            } else {
                toast.success("Email sent!");
