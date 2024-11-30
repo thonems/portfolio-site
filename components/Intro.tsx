@@ -26,8 +26,7 @@ export default function Intro() {
       </div>
 
       <p className="mb-10 mt-6 px-4 text-2x1 font-medium leading-[1.5] sm:text-4x1">
-        Lorem ipsum <span className="font-bold">Thomas Nemeth</span>, sit amet
-        consectetur adipisicing elit. Tempora accusamus sapiente, perspiciatis
+        My name is <span className="font-bold">Thomas Nemeth</span>, and i am a backend developer. Tempora accusamus sapiente, perspiciatis
         mollitia dicta explicabo distinctio qui a expedita eum officia saepe
         voluptatibus esse sunt quo tenetur consequatur commodi veritatis,
         corporis cumque ipsam? Rerum, eos. Officia pariatur corporis totam rem?

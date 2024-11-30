@@ -13,8 +13,7 @@ export default function Contact() {
     >
       <h2 className="text-center text-3xl font-bold mb-8">Contact me</h2>
       <p className="text-2x1 font-medium text-gray-500">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-        cumque?
+        Feel free to conatact me below or email: thonem10@gmail.com
       </p>
 
       <form

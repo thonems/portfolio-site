@@ -62,15 +62,15 @@ export const projects = [
     image: movieImg,
   },
   {
-    title: "test title",
-    description: "Test vtestsetse jlskjklsjef.",
-    tech: ["React", "test", "test.js", "test", "test"],
+    title: "Portfolio-website",
+    description: "React application for my portfolio",
+    tech: ["React", "Typescript", "Tailwind", "Vercel", "Next.js","Resend"],
     image: portfolioImg,
   },
   {
-    title: "Poogers test title",
-    description: "Poggers testing",
-    tech: ["test", "test.js", "test", "test", "test"],
+    title: "Recipe Management",
+    description: "App for managing my recipes i often want to save from the web",
+    tech: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Maven"],
     image: testImg,
   },
 ] as const;
