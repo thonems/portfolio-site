@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,7 +23,7 @@ export default function RootLayout({
         <div className="bg-[#dbd7fb] absolute top-[-1rem] left-[-34rem] h-[31rem] w-[50rem] -z-10 blur-[9rem] rounded-full sm:w-[68rem] md:left-[-33rem] lg:left-[-27rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div>
         <Header />
         {children}
-        
+        <Toaster position="top-center" />
         </body>
     </html>
   )
