@@ -13,11 +13,10 @@ export default function Contact(){
             <h2 className='text-center text-3xl font-bold mb-8'>Contact me</h2>
             <p className='text-2x1 font-medium text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, cumque?</p>
 
-            <form className='flex flex-col mt-9' action={ 
-                    async(formData) => {
-                    await sendEmail(formData)
-                }}>
-                    <input type="email" placeholder="Your email" required={true} maxLength={500} className='h-12 rounded-md border border-black/20 p-3' name='email'/>
+            <form className='flex flex-col mt-9' action={async (formData) => {
+                await sendEmail(formData)
+            }} >
+                    <input type="email" placeholder="Your email" required={true} maxLength={500} className=' px-3 h-12 rounded-md border border-black/20 p-3ppm' name='email'/>
 
                     <textarea className='h-48 my-4 border border-black/20 rounded-md px-3 p-3' name='message' required={true} maxLength={1000} placeholder="Message" />
 
