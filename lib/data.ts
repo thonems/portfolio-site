@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import movieImg from "@/public/movies.png";
-import portfolioImg from "@/public/portfolio.png";
-import testImg from "@/public/test.png";
+import portfolioImg from "@/public/portfolio.jpg";
+import recipeImg from "@/public/recipes.jpg";
 
 export const links = [
   {
@@ -72,7 +72,7 @@ export const projects = [
     description:
       "App for managing my recipes i often want to save from the web",
     tech: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Maven"],
-    image: testImg,
+    image: recipeImg,
   },
 ] as const;
 
