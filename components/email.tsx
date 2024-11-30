@@ -18,12 +18,23 @@ export const sendEmail = async (formData: FormData) => {
     if(!message || typeof message !== "string") {
         return;
     };
-
-    resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: 'thonem10@gmail.com',
-        subject: 'from portfolio site', 
-        replyTo: email,
-        text: message,
-    });
+    
+    try {
+        await resend.emails.send({
+            from: 'Portfolio Website <onboarding@resend.dev>',
+            to: 'thonem10@gmail.com',
+            subject: 'from portfolio site', 
+            replyTo: email as string,
+            text: message as string,
+        });
+    } catch (error){ 
+      if(error instanceof Error){
+        return (error.message);
+      }
+      else if(error && typeof error === "object" && "message" in error){
+        return error.message
+      } else {
+        return "something went wrong";
+      }
+    }
 };
