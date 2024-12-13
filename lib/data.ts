@@ -60,12 +60,14 @@ export const projects = [
       "Project where me and my friends could have a watchlist and pick movies for movie nights.",
     tech: ["Javascript", "Next.js", "MongoDB", "CSS", "Express"],
     image: movieImg,
+    link: "https://github.com/thonems/movie-night-site",
   },
   {
     title: "Portfolio-website",
     description: "React application for my portfolio",
     tech: ["React", "Typescript", "Tailwind", "Vercel", "Next.js", "Resend"],
     image: portfolioImg,
+    link: "https://github.com/thonems/portfolio-site",
   },
   {
     title: "Recipe Management",
@@ -73,6 +75,7 @@ export const projects = [
       "App for managing my recipes i often want to save from the web",
     tech: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Maven"],
     image: recipeImg,
+    link: "https://github.com/thonems/spring-recipe-app",
   },
 ] as const;
 

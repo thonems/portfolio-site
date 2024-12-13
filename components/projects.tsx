@@ -8,8 +8,11 @@ export default function Projects() {
       <h2 className="text-center text-3xl font-bold mb-8">Projects</h2>
       <div>
         {projects.map((project, i) => (
+          <a href={project.link} key={project.title} target="_blank">
+
+          
           <section
-            className="relative bg-gray-200 border border-black/10 sm:h-[20rem] overflow-hidden max-w-[40rem] sm:pr-8 mb-4 sm:mb-8 hover:bg-gray-400 transition"
+            className="relative bg-gray-200 border border-black/10 sm:h-[20rem] overflow-hidden max-w-[40rem] sm:pr-8 mb-4 sm:mb-8 hover:bg-gray-400 transition flex"
             key={project.title}
           >
             <div className="flex flex-col py-4 px-5 sm:pl-10 sm:pt-10 sm:pr-2 sm:max-w-[50%] h-full">
@@ -30,10 +33,11 @@ export default function Projects() {
             </div>
             <Image
               src={project.image}
-              className="absolute top-8 -right-40 rounded-full w-[25rem]"
+              className="absolute top-8 -right-40 rounded-full w-[25rem] hidden sm:block"
               alt={project.title}
             />
           </section>
+          </a>
         ))}
       </div>
     </section>

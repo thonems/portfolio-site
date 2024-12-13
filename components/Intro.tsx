@@ -27,8 +27,7 @@ export default function Intro() {
 
       <p className="mb-10 mt-6 px-4 text-2x1 font-medium leading-[1.5] sm:text-4x1">
         My name is <span className="font-bold">Thomas Nemeth</span>, and i am a
-        backend developer. I enjoy coding, movies and outings with friends.
-        Currently looking for a job!
+        backend developer. I thrive on coding challenges and enjoy exploring innovative technologies. When I’m not coding, I’m often watching movies, gaming with friends, or enjoying the outdoors. Currently, I’m seeking my next exciting opportunity!
       </p>
 
       <div className="flex sm:flex-row flex-col justify-center gap-2 px-4 text-base font-medium ">
