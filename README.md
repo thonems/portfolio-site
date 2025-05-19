@@ -19,9 +19,7 @@ Se den live her: [https://thomas-nemeth.vercel.app](https://thomas-nemeth.vercel
 
 1. Klon repoet:
 
-``git clone https://github.com/thonems/portfolio-site.git
-
-cd portfolio-site``
+``git clone https://github.com/thonems/portfolio-site.git && cd portfolio-site``
 
 2. Installer avhengigheter:
 npm install
