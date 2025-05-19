@@ -2,11 +2,11 @@
 
 Dette er en personlig porteføljeside utviklet med [Next.js](https://nextjs.org/) og [Tailwind CSS](https://tailwindcss.com/), designet for å presentere prosjektene og ferdighetene dine på en moderne og responsiv måte.
 
-## ✨ Demo
+##  Demo
 
 Se den live her: [https://thomas-nemeth.vercel.app](https://thomas-nemeth.vercel.app)
 
-## 🚀 Teknologier brukt
+##  Teknologier brukt
 
 - [Next.js](https://nextjs.org/) – React-basert rammeverk for server-side rendering og statisk generering
 - [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS-rammeverk
